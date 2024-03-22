@@ -1,57 +1,61 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-/* Header Styles */
-header {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-    margin-bottom: 20px;
-}
-header h1 {
-    margin: 0;
-}
-
-/* Navigation Styles */
-nav {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-nav a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 20px;
-    transition: color 0.3s ease;
-}
-nav a:hover {
-    color: #ffc107;
-}
-
-/* Section Styles */
-section {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-section h2 {
-    margin-top: 0;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASABONACO</title>
+    <style>
+        body {
+            background: linear-gradient(to right, black, white);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding: 20px;
+        }
+        .logo {
+            margin-bottom: 20px; /* Add some margin to create space between the logo and the title */
+        }
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        .members img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/storage/emulated/0/Download/iaaa.jpg" alt="KASABONACO Logo">
+        </div>
+        <h1>Welcome to KASABONACO</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#members">Members List</a>
+        </nav>
+        <section id="home">
+            <h2>Home Page</h2>
+            <!-- Add content for home page here -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <!-- Add contact information here -->
+        </section>
+        <section id="members">
+            <h2>Members List</h2>
+            <div class="members">
+                <img src="/storage/emulated/0/Download/images (2).jpeg" alt="Member 1">
+                <!-- Add more member images here if needed -->
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Created by radhin</p>
+    </footer>
+</body>
+</html>
