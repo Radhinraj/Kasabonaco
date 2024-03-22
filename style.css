@@ -12,11 +12,12 @@ header {
     background-color: #343a40;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
-    margin-bottom: 20px;
+    padding: 20px 0;
+    margin-bottom: 10px;
 }
 header h1 {
     margin: 0;
+    font-size: 24px; /* Adjust font size for smaller screens */
 }
 
 /* Navigation Styles */
@@ -25,13 +26,13 @@ nav {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 nav a {
     text-decoration: none;
     color: #fff;
-    margin: 0 20px;
-    transition: color 0.3s ease;
+    margin: 0 10px; /* Reduce margin for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
 }
 nav a:hover {
     color: #ffc107;
@@ -41,12 +42,13 @@ nav a:hover {
 section {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Reduce shadow for smaller screens */
+    padding: 10px;
+    margin-bottom: 10px;
 }
 section h2 {
     margin-top: 0;
+    font-size: 20px; /* Adjust font size for smaller screens */
 }
 
 /* Footer Styles */
@@ -54,6 +56,6 @@ footer {
     background-color: #343a40;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    font-size: 14px; /* Adjust font size for smaller screens */
 }
-
