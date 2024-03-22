@@ -6,11 +6,16 @@
     <title>KASABONACO</title>
     <style>
         body {
-            background: linear-gradient(to right, black, white);
-            text-align: center;
+            background: linear-gradient(to bottom, #4e148c, #000000); /* Purple to black gradient background */
             font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            color: #fff; /* Set text color to white */
         }
         .container {
+            max-width: 800px; /* Set maximum width for better readability */
+            margin: 0 auto; /* Center the container horizontally */
             padding: 20px;
         }
         .logo {
@@ -19,11 +24,54 @@
         .logo img {
             width: 200px;
             height: auto;
+            border-radius: 50%; /* Round the corners of the logo */
+            border: 5px solid #fff; /* Add a white border around the logo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        h1 {
+            color: #fff; /* Set title color to white */
+            margin-top: 0; /* Remove default margin */
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff; /* Set link color to white */
+            text-decoration: none; /* Remove underline */
+            margin: 0 10px; /* Add margin between links */
+            transition: color 0.3s; /* Add smooth transition effect */
+        }
+        nav a:hover {
+            color: #007bff; /* Change link color on hover */
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #fff; /* Set header color to white */
         }
         .members img {
             width: 100px;
             height: auto;
-            margin: 10px;
+            border-radius: 50%; /* Round the corners of member images */
+            border: 3px solid #fff; /* Add a white border around member images */
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            transition: transform 0.3s; /* Add smooth transition effect */
+        }
+        .members img:hover {
+            transform: scale(1.1); /* Enlarge member images on hover */
+        }
+        .member-info {
+            display: none; /* Initially hide member info */
+            position: absolute; /* Position the info box */
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            color: #fff; /* Text color */
+            padding: 10px; /* Padding */
+            border-radius: 5px; /* Rounded corners */
+            z-index: 1; /* Ensure the info box appears on top */
+        }
+        .members img:hover + .member-info {
+            display: block; /* Display info box on hover */
         }
     </style>
 </head>
@@ -32,24 +80,31 @@
         <div class="logo">
             <img src="/storage/emulated/0/Download/iaaa.jpg" alt="KASABONACO Logo">
         </div>
-        <h1>Welcome to KASABONACO</h1>
+        <h1>Welcome to KASABONACO Club</h1>
         <nav>
-            <a href="#home">Home</a> |
-            <a href="#contact">Contact</a> |
-            <a href="#members">Members List</a>
+            
         </nav>
-        <section id="home">
-            <h2>Home Page</h2>
+        
+            <!--add below paragraph any heading 😁-->
             <!-- Add content for home page here -->
+            <section id="home">
+                <h2>home<h2>
+                    
+            </section>
+            <p>Welcome to kasabonaco club, where greatness meets community. With a legacy built on passion, teamwork, and excellence, we re more than just a club we're a family. Join us as we strive for greatness together.</p>
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <!-- Add contact information here -->
+            <p>Email: kasabonaco@gmail.com</p>
+            <p>Phone: +91 6238659224</p>
         </section>
         <section id="members">
             <h2>Members List</h2>
             <div class="members">
-                <img src="/storage/emulated/0/Download/images (2).jpeg" alt="Member 1">
+                <img src="/storage/emulated/0/Download/images (2).jpeg" alt="Members" data-name="John Doe" data-age="25">
+                <div class="member-info">Jithu,age 25</div>
+                <div class="member-info">abhi, age21</div>
                 <!-- Add more member images here if needed -->
             </div>
         </section>
