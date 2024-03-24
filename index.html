@@ -4,6 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KASABONACO</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASABONACO</title>
+    <style>
+        /* CSS styles remain unchanged */
+        .menu-toggle {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            cursor: pointer;
+            z-index: 999; /* Ensure it's above other content */
+        }
+
+        .line {
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3-line button -->
+    <div class="menu-toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Rest of your HTML content -->
+    <div class="container">
+        <!-- Other content -->
+    </div>
+
+    <script>
+        // JavaScript for handling toggle functionality can be added here if needed
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASABONACO</title>
+    <style>
+        /* CSS styles remain unchanged */
+        .menu-toggle {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            cursor: pointer;
+            z-index: 999; /* Ensure it's above other content */
+        }
+
+        .line {
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 50px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 998; /* Ensure it's below the toggle button */
+        }
+
+        .menu a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3-line button -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Menu for videos and photos, and login -->
+    <div class="menu" id="menu">
+        <a href="#">Videos</a>
+        <a href="#">Photos</a>
+        <a href="#">Login</a>
+    </div>
+
+    <!-- Rest of your HTML content -->
+    <div class="container">
+        <!-- Other content -->
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
     <style>
         /* CSS styles remain unchanged */
     </style>
@@ -41,7 +158,7 @@
 
             <div class="members">
                 </h1>members details </h1>
-                <a href="#" onclick="toggleMemberDetails('members')">​🇨 ​🇱​​🇮​​🇰​​🇪​ ​🇭​​🇪​​🇷​​🇪​
+                <a href="#" onclick="toggleMemberDetails('members')">🇨 🇱 🇮 🇰 🇪  🇭 🇪 🇷 🇪 
 </a>
                 <!-- Add more member names here if needed -->
             </div>
